@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Gabriel Sison
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Random Stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingContinue}[2]{
+  \vspace{-3pt}
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{center}
+        % NAME
+        {\Huge\scshape Aisha Khan} 
+        % SUBHEADING
+        \\ Undergraduate in Computer Science\\
+        \small
+        % EMAIL
+        \href{mailto:EMAIL}{\raisebox{-0.2\height}\faEnvelope\  \underline{khan61@uoguelph.ca}} ~ 
+        % LINKEDIN
+        \href{LINK}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/aisha-khan-161914258}}  ~
+        % GITHUB
+        \href{LINK}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Aisha-Khann}}
+    \end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    % MAIN INFORMATION
+    \resumeSubheading
+    {University Of Guelph}{50 Stone Rd E, Guelph, ON}
+    {Bachelors of Computing Honours, Major in Computer Science, GPA: 82}{Sep 2023 - Current}
+        % BULLET POINTS
+        \resumeItemListStart
+            \resumeItem{\textbf{Selected Coursework:} Programming, Intermediate Programming, Web Design and Development, Discrete Structures/Mathematics, Statistics, Linear Algebra}
+            \resumeItem{\textbf{Awards:} College of Engineering and Physical Sciences Dean's Honours List }
+        \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills}
+
+    \vspace{-7pt}
+    \begin{itemize}
+    [leftmargin=0.15in, label={}]\small{\item{
+        % LANGUAGES
+        \textbf{Languages}{: C, C++, Python, Python 3, LaTeX, HTML, R} \\
+        % TOOLS
+        \textbf{Developer Tools}{: Git, GitHub, Visual Studio, R Studio} \\
+        % TECHNOLOGIES
+        \textbf{Technologies/Frameworks}{: CSS Styling, GitHub, GitLab, VSCode} \\}}
+    \end{itemize}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Personal Projects} 
+    \resumeSubHeadingListStart
+
+        % Project 1
+        \resumeProjectHeading
+        {Employee Contact Database Management System (C)}
+        % Date
+        {FEBRUARY 2024}
+        \resumeItemListStart
+            \resumeItem{Developed a user-friendly interface in C to collect and store employee contact data, including name, ID, email, etc., into a structured .db file. Useful in Data Analysis}
+            \resumeItem{Implemented the programming use of binary files, dynamic allocation, user-defined functions and makefile}
+            \resumeItem{Implemented a user-friendly menu interface in C, enabling users to efficiently search for employees by ID or name, print all employee records for easy access, and dynamically add new employee records to the database, ensuring seamless expansion and maintenance of the database}
+            \resumeItem{Ensured data integrity and error handling throughout the application to provide a robust and reliable solution for managing employee records}
+        \resumeItemListEnd
+
+        % Project 2
+        \resumeProjectHeading
+        {Dynamic Car Information Management System (C)}
+        % Date
+        {MARCH 2024}
+        \resumeItemListStart
+            \resumeItem{CarManager is a sophisticated software solution designed to streamline the organization and management of car information within the OneCarSolution warehouse.}
+            \resumeItem{Built upon a robust foundation of a dynamic linked list implemented in C programming, CarManager offers a versatile platform for storing, updating, and accessing vital car data}
+            \resumeItem{Utilizes a dynamic linked list structure to efficiently store and manage car information, ensuring flexible memory allocation and optimized performance}
+            \resumeItem{Features an intuitive user interface with a menu prompting users to add, edit, and remove car information effortlessly. Allows users to input or modify details such as car make, model, year, VIN, and more with just a few clicks.}
+            \resumeItem{Delivers quick and accurate results for tasks like sorting cars by make or searching for specific models. Empowers the company to maintain optimal organization and efficiency in its operations, providing a seamless user experience and robust functionality}
+        \resumeItemListEnd
+
+        % Project 2
+        \resumeProjectHeading
+        {Professional Portfolio (HTML)}
+        % Date
+        {MARCH 2024}
+        \resumeItemListStart
+            \resumeItem{Created an interactive website in HTML code to serve as a professional portfolio, incorporating personal interests, background skills, future planning and personal projects.}
+            \resumeItem{Incorporated the use of hyperlinks, navigation bar, images, lists, article bodies and CSS Styling within the code}
+        \resumeItemListEnd
+
+
+        % Project 3
+        \resumeProjectHeading
+        {Data Processing and Visualization for Measles Inoculation Rates Analysis (Python)}
+        % Date
+        {MARCH 2024}
+        \resumeItemListStart
+            \resumeItem{Designed and implemented a Python program to process data compiled in a CSV file by the World Health Organization (WHO) containing vaccination data across various countries over time.}
+            \resumeItem{Produced four distinct graphical representations including scatterplots and line graphs to illustrate the relationship between country, income level, and vaccination percentage useful in later data analysis reports.}
+        \resumeItemListEnd
+
+        % Project 2
+        \resumeProjectHeading
+        {Fibonacci Sequence Calculator and Simple Math Calculator (Python)}
+        % Date
+        {JANUARY 2024}
+        \resumeItemListStart
+            \resumeItem{Defined two functions, fibonacciRecursive and fibonacciIterative, both of which calculate the nth Fibonacci number based on user input.}
+            \resumeItem{Produced a simple calculator for basic mathematical operations instructed through user input.}
+        \resumeItemListEnd
+    
+        
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Work Experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Work Experience}
+    \resumeSubHeadingListStart
+    
+        % COMPANY 1
+        \resumeSubheading
+        {DKNY/KARL LAGERFELD}{TORONTO PREMIUM OUTLETS, HALTON HILLS}
+            % POSITION 1
+            {SALES ASSOCIATE}{MAY 2023 - APRIL 2024}
+            \resumeItemListStart
+                \resumeItem{Provided personalized assistance to clientele with a focus on clear communication, kindness, and professional demeanor}
+                \resumeItem{Achieved daily goals, driven by a commitment to surpassing expectations and fostering enduring customer relationships through exemplary service}
+                \resumeItem{Managed both the cash register and sales floor, gained expertise in the handling of transactions}
+            \resumeItemListEnd
+
+        % COMPANY 2
+        \resumeSubheading
+        {CALVIN KLEIN}{TORONTO PREMIUM OUTLETS, HALTON HILLS}
+            % POSITION 1
+            {SALES ASSOCIATE}{JUNE 2022 - DECEMBER 2022}
+            \resumeItemListStart
+                \resumeItem{Provided exceptional customer service by assisting with product selection, folding clothes, and maintaining a tidy and organized store environment}
+            \resumeItemListEnd
+            
+            % POSITION 2
+            \resumeSubheadingContinue
+            {CASHIER}{}
+            \resumeItemListStart
+                \resumeItem{Managed large transactions including refunds and exchanges at the cash register}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    
+\end{document}
